@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -25,4 +26,6 @@ def numPlot(df, numerical):
         ax[idx+6].set_xlabel(None)
         
     fig.tight_layout()
+    fig.savefig(os.path.join("..","img","num_distributions.png"))
     plt.show()
+    

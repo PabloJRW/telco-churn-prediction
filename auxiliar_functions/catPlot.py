@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -14,3 +15,5 @@ def catPlot(df, categorical):
         ax[idx].set_xlabel(None)
         
     fig.tight_layout(h_pad=3)
+    fig.savefig(os.path.join("..","img","cat_distributions.png"))
+    plt.show()
