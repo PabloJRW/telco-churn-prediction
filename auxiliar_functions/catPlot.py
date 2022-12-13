@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def catPlot(df, categorical):
-    fig, ax = plt.subplots(nrows=5, ncols=3, figsize=(18,18))
+    fig, ax = plt.subplots(nrows=6, ncols=3, figsize=(18,18))
     ax = ax.flatten()
     plt.suptitle('Categorical Variables', fontweight='bold', fontsize=24)
 
